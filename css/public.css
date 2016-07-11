@@ -24,22 +24,115 @@ p,
 blockquote,
 th,
 td {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-body{
-    background-color: #f9f9f7;
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #fff;
 }
 input {
-    outline: none;
-    border: none;
+  outline: none;
+  border: none;
 }
 ul {
-    list-style: none;
+  list-style: none;
 }
 li {
-    list-style: none;
+  list-style: none;
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
+}
+.home-page .header-home {
+  display: -webkit-flex;
+  /* Safari */
+  display: flex;
+  align-items: center;
+  padding: 5vw;
+  background-color: #fea201;
+}
+.home-page .header-home .head-portrait {
+  width: 18vw;
+  height: 18vw;
+}
+.home-page .header-home .head-portrait img {
+  width: 100%;
+  height: 100%;
+}
+.home-page .header-home .sale-name {
+  font-size: 2rem;
+  margin-left: 3vw;
+  font-weight: 600;
+  color: #fff;
+}
+.home-page .header-home .exit {
+  margin-left: 28vw;
+  border-radius: 1vw;
+  padding: 1vw 3vw;
+  font-size: 1.5rem;
+  color: #333;
+  background-color: #fff;
+  font-weight: 600;
+}
+.home-page .performance {
+  text-align: center;
+  margin-top: 5vw;
+  padding: 10vw;
+  font-weight: 600;
+  color: #000;
+  background-color: #f9f9f7;
+}
+.home-page .performance p {
+  font-size: 2rem;
+  margin-bottom: 3vw;
+}
+.home-page .performance span {
+  font-size: 3rem;
+  font-style: normal;
+}
+.home-page .main {
+  margin-top: 5vw;
+  padding: 10vw 3vw;
+}
+.home-page .main .items {
+  display: -webkit-flex;
+  /* Safari */
+  display: flex;
+  justify-content: space-between;
+}
+.home-page .main .items .item {
+  display: -webkit-flex;
+  /* Safari */
+  display: flex;
+  align-items: center;
+  width: 37vw;
+  padding: 4vw 4vw;
+}
+.home-page .main .items .item i {
+  display: inline-block;
+  width: 15vw;
+  height: 15vw;
+  margin-right: 1vw;
+}
+.home-page .main .items .item span {
+  font-size: 2rem;
+  color: #fff;
+}
+.home-page footer {
+  margin: 30vw 0 10vw 0;
+  width: 100%;
+  bottom: 10vw;
+  text-align: center;
+}
+.home-page footer .footer-logo {
+  display: inline-block;
+  width: 30vw;
+  height: 15vw;
+}
+.home-page footer .footer-logo img {
+  width: 100%;
+  height: 100%;
 }
