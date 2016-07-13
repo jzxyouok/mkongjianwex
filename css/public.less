@@ -31,6 +31,7 @@ html{
   font-size: 62.5%;
 }
 body{
+  font-family: 宋体;
   background-color: #fff;
 }
 input {
@@ -136,9 +137,205 @@ a {
 }
 /*业绩查询*/
 .performance-search{
-  display: -webkit-flex; /* Safari */
   display: flex;
-  align-items: center;
-  background-color: #fea201;
-  padding:3vw;
+  flex-flow: column;
+  min-height: 100vh;
+  .head-performance{
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fea201;
+    padding:6vw 3vw 3vw 3vw;
+    .return{
+      display: inline-block;
+      width: 7vw;
+      height: 7vw;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    h3{
+      color: #fff;
+      font-size: 3rem;
+    }
+    em{
+      display: inline-block;
+      width: 5vw;
+      height: 5vw;
+    }
+  }
+  main{
+    flex: 1;
+    margin-bottom: 20vw;
+    article{
+      margin: 5vw 0;
+      padding: 4vw;
+      background-color: #f9f9f7;
+      .order-head{
+        display: -webkit-flex;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span{
+          font-weight: 600;
+          font-size: 2rem;
+        }
+        .order-page{
+          display: inline-block;
+          width: 5vw;
+          height: 3.8vw;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      hr{
+        margin-top: 4vw;
+        color: #333;
+      }
+      .order-introduce{
+        display: -webkit-flex;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 3vw;
+        span{
+          font-weight: 600;
+          font-size: 1.5rem;
+          em{
+            font-style: normal;
+          }
+        }
+      }
+    }
+  }
+  footer{
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    z-index: 200;
+    .logo{
+      display: inline-block;
+      margin: 5vw calc(50vw - 15vw);
+      width: 30vw;
+      height: 15vw;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+//清单
+.list-form{
+  .list-head{
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fea201;
+    padding:6vw 3vw 3vw 3vw;
+    .return{
+      display: inline-block;
+      width: 7vw;
+      height: 7vw;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    h3{
+      color: #fff;
+      font-size: 3rem;
+    }
+    em{
+      display: inline-block;
+      width: 5vw;
+      height: 5vw;
+    }
+  }
+  .list-main{
+    margin-top: 5vw;
+    padding: 4vw;
+    background-color: #f9f9f7;
+    .list-detail{
+      display: -webkit-flex;
+      display: flex;
+      justify-content: space-between;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    .list-message{
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      font-size: 1.5rem;
+      li{
+        padding: 1.5vw 0;
+      }
+      .pay-time{
+        display: -webkit-flex;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .list-product{
+      margin-top: 10vw;
+      b{
+        display: block;
+        width: 30vw;
+        text-align: center;
+        margin: -4vw auto 0 auto;
+        background-color: #f9f9f7;
+        font-size: 2rem;
+      }
+      hr{
+        width: 80vw;
+        margin: 0 auto;
+      }
+      .product-module{
+        margin-top: 5vw;
+        .module-ico{
+          display: inline-block;
+          vertical-align: middle;
+          width: 10vw;
+          height: 5vw;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .module-name{
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 1.5rem;
+        }
+        .product-detail{
+          padding: 2vw 0;
+          border-bottom: 1px dashed #333;
+          .product-img{
+            display: inline-block;
+            width: 45vw;
+            height: 28vw;
+            img{
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .product-message{
+            display: inline-block;
+            width: 45vw;
+            vertical-align: top;
+            p{
+              padding-bottom:1vw;
+            }
+          }
+        }
+      }
+    }
+  }
 }

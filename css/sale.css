@@ -8,3 +8,30 @@
   background-position: 0 100%;
   background-size: 102%;
 }
+.sale-order .head-order {
+  display: -webkit-flex;
+  /* Safari */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fea201;
+  padding: 6vw 3vw 3vw 3vw;
+}
+.sale-order .head-order .return {
+  display: inline-block;
+  width: 7vw;
+  height: 7vw;
+}
+.sale-order .head-order .return img {
+  width: 100%;
+  height: 100%;
+}
+.sale-order .head-order h3 {
+  color: #fff;
+  font-size: 3rem;
+}
+.sale-order .head-order em {
+  display: inline-block;
+  width: 5vw;
+  height: 5vw;
+}
