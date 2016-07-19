@@ -1,0 +1,209 @@
+.finance-home .header-home {
+  display: -webkit-flex;
+  /* Safari */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3vw;
+  background-color: #fea201;
+}
+.finance-home .header-home .head-message {
+  display: -webkit-flex;
+  /* Safari */
+  display: flex;
+  align-items: center;
+}
+.finance-home .header-home .head-message .head-portrait {
+  width: 20vw;
+  height: 20vw;
+}
+.finance-home .header-home .head-message .head-portrait img {
+  width: 100%;
+  height: 100%;
+}
+.finance-home .header-home .head-message .sale-name {
+  font-size: 2.5rem;
+  margin-left: 1vw;
+  font-weight: 600;
+  color: #fff;
+}
+.finance-home .header-home .exit {
+  border-radius: 1vw;
+  padding: 1vw 3vw;
+  font-size: 1.8rem;
+  color: #333;
+  background-color: #fff;
+  font-weight: 600;
+}
+.finance-home .performance {
+  text-align: center;
+  padding: 10vw;
+  font-weight: 600;
+  color: #000;
+  background-color: #f9f9f7;
+}
+.finance-home .performance p {
+  font-size: 2rem;
+  margin-bottom: 3vw;
+}
+.finance-home .performance span {
+  font-size: 3rem;
+  font-style: normal;
+}
+.finance-home .main {
+  margin-top: 5vw;
+  padding: 10vw 3vw;
+}
+.finance-home .main .items {
+  display: -webkit-flex;
+  /* Safari */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.finance-home .main .items .item {
+  display: -webkit-flex;
+  /* Safari */
+  display: flex;
+  align-items: center;
+  width: 41vw;
+  padding: 4vw 0 4vw 4vw;
+  margin-bottom: 5vw;
+}
+.finance-home .main .items .item i {
+  display: inline-block;
+  width: 12vw;
+  height: 12vw;
+  margin-right: 1vw;
+}
+.finance-home .main .items .item span {
+  font-size: 1.6rem;
+  color: #fff;
+}
+.finance-home footer {
+  margin: 10vw 0 10vw 0;
+  width: 100%;
+  bottom: 10vw;
+  text-align: center;
+}
+.finance-home footer .footer-logo {
+  display: inline-block;
+  width: 30vw;
+  height: 15vw;
+}
+.finance-home footer .footer-logo img {
+  width: 100%;
+  height: 100%;
+}
+.finance-home .nopay-client {
+  background: url("../images/caiwuhome.png") no-repeat;
+  background-position: 0 66.05%;
+  background-size: 100%;
+}
+.finance-home .pay-client {
+  background: url("../images/caiwuhome.png") no-repeat;
+  background-position: 0 -1%;
+  background-size: 102%;
+}
+.finance-home .nopay-factory {
+  background: url("../images/caiwuhome.png") no-repeat;
+  background-position: 0 34%;
+  background-size: 102%;
+}
+.finance-home .pay-factory {
+  background: url("../images/caiwuhome.png") no-repeat;
+  background-position: 0 100%;
+  background-size: 102%;
+}
+.nopayfee-client .head-order {
+  display: -webkit-flex;
+  /* Safari */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fea201;
+  padding: 6vw 3vw 3vw 3vw;
+}
+.nopayfee-client .head-order .return {
+  display: inline-block;
+  width: 7vw;
+  height: 7vw;
+}
+.nopayfee-client .head-order .return img {
+  width: 100%;
+  height: 100%;
+}
+.nopayfee-client .head-order h3 {
+  color: #fff;
+  font-size: 3rem;
+}
+.nopayfee-client .head-order em {
+  display: inline-block;
+  width: 5vw;
+  height: 5vw;
+}
+.nopayfee-client main {
+  margin-bottom: 20vw;
+}
+.nopayfee-client main .clients .client-detail {
+  margin-top: 5vw;
+  padding: 4vw;
+  background-color: #f9f9f7;
+}
+.nopayfee-client main .clients .client-detail span {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.nopayfee-client main .clients .client-detail .client-head {
+  display: -webkit-flex;
+  display: flex;
+  padding-bottom: 2vw;
+  justify-content: space-between;
+  border-bottom: 1px solid #d6d6d4;
+}
+.nopayfee-client main .clients .client-detail .client-head .care-for {
+  display: inline-block;
+  width: 7vw;
+  height: 5vw;
+  background: url("../images/care.png") no-repeat;
+  background-size: 155%;
+  background-position: 0 0;
+  /*32.5*/
+}
+.nopayfee-client main .clients .client-detail .client-message {
+  padding-top: 2vw;
+}
+.nopayfee-client main .clients .client-detail .client-message li {
+  padding: 2vw 0;
+}
+.nopayfee-client main .clients .client-detail .client-message .client-phone {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+}
+.nopayfee-client main .clients .client-detail .client-message .client-phone .visit-client {
+  display: inline-block;
+  width: 7vw;
+  height: 5vw;
+  background: url("../images/care.png") no-repeat;
+  background-size: 155%;
+  background-position: 0 0;
+}
+.nopayfee-client main .clients .client-detail .client-message em {
+  font-style: normal;
+}
+.nopayfee-client main .clients .client-detail .client-message .client-money {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nopayfee-client main .clients .client-detail .client-message .client-money b {
+  font-size: 2rem;
+}
+.nopayfee-client main .clients .client-detail .client-message .client-money .verify-pay {
+  padding: 2vw 5vw;
+  color: #fff;
+  background-color: #e60012;
+  border-radius: 2vw;
+}

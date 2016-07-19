@@ -47,33 +47,45 @@ li {
 a {
   text-decoration: none;
 }
+.home-page {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
 .home-page .header-home {
   display: -webkit-flex;
   /* Safari */
   display: flex;
   align-items: center;
   padding: 3vw;
+  justify-content: space-between;
   background-color: #fea201;
 }
-.home-page .header-home .head-portrait {
+.home-page .header-home .head-message {
+  display: -webkit-flex;
+  /* Safari */
+  display: flex;
+  align-items: center;
+}
+.home-page .header-home .head-message .head-portrait {
+  display: inline-block;
   width: 20vw;
   height: 20vw;
 }
-.home-page .header-home .head-portrait img {
+.home-page .header-home .head-message .head-portrait img {
   width: 100%;
   height: 100%;
 }
-.home-page .header-home .sale-name {
-  font-size: 2.5rem;
-  margin-left: 1vw;
+.home-page .header-home .head-message .sale-name {
+  font-size: 2rem;
+  margin-left: 3vw;
   font-weight: 600;
   color: #fff;
 }
 .home-page .header-home .exit {
-  margin-left: 25vw;
   border-radius: 1vw;
   padding: 1vw 3vw;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   color: #333;
   background-color: #fff;
   font-weight: 600;
@@ -86,11 +98,11 @@ a {
   background-color: #f9f9f7;
 }
 .home-page .performance p {
-  font-size: 2rem;
+  font-size: 1.6rem;
   margin-bottom: 3vw;
 }
 .home-page .performance span {
-  font-size: 3rem;
+  font-size: 2rem;
   font-style: normal;
 }
 .home-page .main {
@@ -118,13 +130,12 @@ a {
   margin-right: 1vw;
 }
 .home-page .main .items .item span {
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: #fff;
 }
 .home-page footer {
-  margin: 30vw 0 10vw 0;
   width: 100%;
-  bottom: 10vw;
+  margin-bottom: 10vw;
   text-align: center;
 }
 .home-page footer .footer-logo {
@@ -162,7 +173,7 @@ a {
 }
 .performance-search .head-performance h3 {
   color: #fff;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .performance-search .head-performance em {
   display: inline-block;
@@ -186,7 +197,7 @@ a {
 }
 .performance-search main article .order-head span {
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 .performance-search main article .order-head .order-page {
   display: inline-block;
@@ -209,7 +220,7 @@ a {
 }
 .performance-search main article .order-introduce span {
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .performance-search main article .order-introduce span em {
   font-style: normal;

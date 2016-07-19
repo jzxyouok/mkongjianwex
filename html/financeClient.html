@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>客户缴费</title>
+    <meta name="viewport" content="initial-scale=1.0,width=device-width,user-scalable=0,maximum-scale=1.0"/>
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/finance.css">
+</head>
+<body>
+<div class="nopayfee-client">
+    <header class="head-order">
+        <i class="return"><img src="../images/return.png" alt="return"></i>
+        <h3>客户缴费</h3>
+        <em></em>
+    </header>
+    <main>
+        <ul class="clients">
+            <!--一个客户-->
+            <li class="client-detail">
+                <div class="client-head">
+                    <span>客户A <em>13812341234</em></span>
+                    <i class="care-for"></i>
+                </div>
+                <ul class="client-message">
+                    <li class="order-time">
+                        <span>提交时间：<em>2016.05.06 12:20</em></span>
+                        <span>总件数：18</span>
+                    </li>
+                    <li class="client-money">
+                        <span>应付：<br>
+                            <b>38700</b>
+                        </span>
+                        <input type="button" value="确认收款" class="verify-pay">
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </main>
+</div>
+
+<script src="../vendor/zepto.js"></script>
+<script src="../vendor/zepto-touch.js"></script>
+<script src="../js/public.js"></script>
+<script src="../js/login.js"></script>
+</body>
+</html>

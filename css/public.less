@@ -48,31 +48,41 @@ a {
   text-decoration: none;
 }
 .home-page {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
   .header-home {
     display: -webkit-flex; /* Safari */
     display: flex;
     align-items: center;
     padding: 3vw;
+    justify-content: space-between;
     background-color: #fea201;
-    .head-portrait {
-      width: 20vw;
-      height: 20vw;
-      img {
-        width: 100%;
-        height: 100%;
+    .head-message {
+      display: -webkit-flex; /* Safari */
+      display: flex;
+      align-items: center;
+      .head-portrait {
+        display: inline-block;
+        width: 20vw;
+        height: 20vw;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .sale-name {
+        font-size: 2rem;
+        margin-left: 3vw;
+        font-weight: 600;
+        color: #fff;
       }
     }
-    .sale-name {
-      font-size: 2.5rem;
-      margin-left: 1vw;
-      font-weight: 600;
-      color: #fff;
-    }
     .exit {
-      margin-left: 25vw;
+
       border-radius: 1vw;
       padding: 1vw 3vw;
-      font-size: 1.8rem;
+      font-size: 1.2rem;
       color: #333;
       background-color: #fff;
       font-weight: 600;
@@ -85,11 +95,11 @@ a {
     color: #000;
     background-color: #f9f9f7;
     p {
-      font-size: 2rem;
+      font-size: 1.6rem;
       margin-bottom: 3vw;
     }
     span {
-      font-size: 3rem;
+      font-size: 2rem;
       font-style: normal;
     }
   }
@@ -113,16 +123,16 @@ a {
           margin-right: 1vw;
         }
         span{
-          font-size: 2rem;
+          font-size: 1.6rem;
           color: #fff;
         }
       }
     }
   }
   footer{
-    margin: 30vw 0 10vw 0;
+   // margin: 30vw 0 10vw 0;
     width: 100%;
-    bottom: 10vw;
+    margin-bottom: 10vw;
     text-align: center;
     .footer-logo{
       display: inline-block;
@@ -158,7 +168,7 @@ a {
     }
     h3{
       color: #fff;
-      font-size: 3rem;
+      font-size: 2rem;
     }
     em{
       display: inline-block;
@@ -180,7 +190,7 @@ a {
         align-items: center;
         span{
           font-weight: 600;
-          font-size: 2rem;
+          font-size: 1.8rem;
         }
         .order-page{
           display: inline-block;
@@ -204,7 +214,7 @@ a {
         padding-top: 3vw;
         span{
           font-weight: 600;
-          font-size: 1.5rem;
+          font-size: 1.2rem;
           em{
             font-style: normal;
           }

@@ -6,144 +6,43 @@
     <meta name="viewport" content="initial-scale=1.0,width=device-width,user-scalable=0,maximum-scale=1.0"/>
     <link rel="stylesheet" href="../css/public.css">
     <link rel="stylesheet" href="../css/sale.css">
+    <script src="../vendor/vue.js"></script>
+    <script src="../vendor/zepto.js"></script>
+    <script src="../vendor/zepto-touch.js"></script>
 </head>
-<body>
-    <div class="performance-search">
+<body id="performanceSearch">
+    <div class="performance-search" >
         <header class="head-performance">
-            <i class="return"><img src="../images/return.png" alt="return"></i>
+            <i class="return" @click="backPage"><img src="../images/return.png" alt="return"></i>
             <h3>业绩查询</h3>
             <em></em>
         </header>
         <main>
             <!--一个订单-->
-            <article>
-            <div class="order-head">
-                <span>订单：<b>K1234567890</b></span>
-                <i class="order-page"><img src="../images/searchdetail.png" alt="查看订单详情"></i>
-            </div>
-            <hr>
-            <ul class="order-introduces">
-                <li class="order-introduce">
-                    <span class="order-time">付款时间：<em>2016.05.06 12:20</em></span>
-                    <span class="order-number">总件数：<em>18</em></span>
-                </li>
-                <li class="order-introduce">
-                    <span class="order-money">金额：<em>360000</em>元</span>
-                    <span class="order-state">状态：<em>已付款</em></span>
-                </li>
-            </ul>
+            <article v-for="vm in items">
+                <div class="order-head">
+                    <span>订单：K<b>{{vm.order_sn}}</b></span>
+                    <i class="order-page"><img src="../images/searchdetail.png" alt="查看订单详情"></i>
+                </div>
+                <hr>
+                <ul class="order-introduces">
+                    <li class="order-introduce">
+                        <span class="order-time">付款时间：<em>{{vm.pay_time}}</em></span>
+                        <span class="order-number">总件数：<em>{{vm.total_number}}</em></span>
+                    </li>
+                    <li class="order-introduce">
+                        <span class="order-money">金额：<em>{{vm.money_paid}}</em>元</span>
+                        <span class="order-state">状态：<em>已付款</em></span>
+                    </li>
+                </ul>
             </article>
 
-            <article>
-                <div class="order-head">
-                    <span>订单：<b>K1234567890</b></span>
-                    <i class="order-page"><img src="../images/searchdetail.png" alt="查看订单详情"></i>
-                </div>
-                <hr>
-                <ul class="order-introduces">
-                    <li class="order-introduce">
-                        <span>付款时间：<em>2016.05.06 12:20</em></span>
-                        <span>总件数：<em>18</em></span>
-                    </li>
-                    <li class="order-introduce">
-                        <span>金额：<em>360000</em>元</span>
-                        <span>状态：<em>已付款</em></span>
-                    </li>
-                </ul>
-            </article>
-            <article>
-                <div class="order-head">
-                    <span>订单：<b>K1234567890</b></span>
-                    <i class="order-page"><img src="../images/searchdetail.png" alt="查看订单详情"></i>
-                </div>
-                <hr>
-                <ul class="order-introduces">
-                    <li class="order-introduce">
-                        <span>付款时间：<em>2016.05.06 12:20</em></span>
-                        <span>总件数：<em>18</em></span>
-                    </li>
-                    <li class="order-introduce">
-                        <span>金额：<em>360000</em>元</span>
-                        <span>状态：<em>已付款</em></span>
-                    </li>
-                </ul>
-            </article>
-            <article>
-                <div class="order-head">
-                    <span>订单：<b>K1234567890</b></span>
-                    <i class="order-page"><img src="../images/searchdetail.png" alt="查看订单详情"></i>
-                </div>
-                <hr>
-                <ul class="order-introduces">
-                    <li class="order-introduce">
-                        <span>付款时间：<em>2016.05.06 12:20</em></span>
-                        <span>总件数：<em>18</em></span>
-                    </li>
-                    <li class="order-introduce">
-                        <span>金额：<em>360000</em>元</span>
-                        <span>状态：<em>已付款</em></span>
-                    </li>
-                </ul>
-            </article>
-            <article>
-                <div class="order-head">
-                    <span>订单：<b>K1234567890</b></span>
-                    <i class="order-page"><img src="../images/searchdetail.png" alt="查看订单详情"></i>
-                </div>
-                <hr>
-                <ul class="order-introduces">
-                    <li class="order-introduce">
-                        <span>付款时间：<em>2016.05.06 12:20</em></span>
-                        <span>总件数：<em>18</em></span>
-                    </li>
-                    <li class="order-introduce">
-                        <span>金额：<em>360000</em>元</span>
-                        <span>状态：<em>已付款</em></span>
-                    </li>
-                </ul>
-            </article>
-            <article>
-                <div class="order-head">
-                    <span>订单：<b>K1234567890</b></span>
-                    <i class="order-page"><img src="../images/searchdetail.png" alt="查看订单详情"></i>
-                </div>
-                <hr>
-                <ul class="order-introduces">
-                    <li class="order-introduce">
-                        <span>付款时间：<em>2016.05.06 12:20</em></span>
-                        <span>总件数：<em>18</em></span>
-                    </li>
-                    <li class="order-introduce">
-                        <span>金额：<em>360000</em>元</span>
-                        <span>状态：<em>已付款</em></span>
-                    </li>
-                </ul>
-            </article>
-            <article>
-                <div class="order-head">
-                    <span>订单：<b>K1234567890</b></span>
-                    <i class="order-page"><img src="../images/searchdetail.png" alt="查看订单详情"></i>
-                </div>
-                <hr>
-                <ul class="order-introduces">
-                    <li class="order-introduce">
-                        <span>付款时间：<em>2016.05.06 12:20</em></span>
-                        <span>总件数：<em>18</em></span>
-                    </li>
-                    <li class="order-introduce">
-                        <span>金额：<em>360000</em>元</span>
-                        <span>状态：<em>已付款</em></span>
-                    </li>
-                </ul>
-            </article>
         </main>
         <footer>
             <i class="logo"><img src="../images/logo.png" alt="logo"></i>
         </footer>
     </div>
-    <script src="../vendor1/zepto.js"></script>
-    <script src="../vendor1/zepto-touch.js"></script>
     <script src="../js/public.js"></script>
-    <script src="../js/login.js"></script>
+    <script src="../js/performanceSearch.js"></script>
 </body>
 </html>
