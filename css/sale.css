@@ -1,4 +1,4 @@
-.home-page .performance-search {
+.home-page .performance-searchs {
   background: url("../images/saleitems.png") no-repeat;
   background-position: 0 0;
   background-size: 110%;
@@ -34,4 +34,154 @@
   display: inline-block;
   width: 5vw;
   height: 5vw;
+}
+.sale-order main {
+  margin-bottom: 20vw;
+}
+.sale-order main .clients .client-detail {
+  margin-top: 5vw;
+  padding: 4vw;
+  background-color: #f9f9f7;
+}
+.sale-order main .clients .client-detail span {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.sale-order main .clients .client-detail .client-head {
+  display: -webkit-flex;
+  display: flex;
+  padding-bottom: 2vw;
+  justify-content: space-between;
+  border-bottom: 1px solid #d6d6d4;
+}
+.sale-order main .clients .client-detail .client-head .care-for {
+  display: inline-block;
+  width: 8vw;
+  height: 7vw;
+  background: url("../images/care.png") no-repeat;
+  background-size: 95%;
+  background-position: 0 102%;
+  /*32.5*/
+}
+.sale-order main .clients .client-detail .client-message {
+  padding-top: 2vw;
+}
+.sale-order main .clients .client-detail .client-message li {
+  padding: 2vw 0;
+}
+.sale-order main .clients .client-detail .client-message .client-phone {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+}
+.sale-order main .clients .client-detail .client-message .client-phone .visit-client {
+  display: inline-block;
+  width: 7vw;
+  height: 5vw;
+  background: url("../images/care.png") no-repeat;
+  background-size: 155%;
+  background-position: 0 0;
+}
+.sale-order main .clients .client-detail .client-message em {
+  font-style: normal;
+}
+.sale-order main .clients .client-detail .client-message .remark-message {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.sale-order footer {
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  z-index: 200;
+}
+.sale-order footer .logo {
+  display: inline-block;
+  margin: 5vw calc(35vw);
+  width: 30vw;
+  height: 15vw;
+}
+.sale-order footer .logo img {
+  width: 100%;
+  height: 100%;
+}
+.remark-detail .head-remark {
+  display: -webkit-flex;
+  /* Safari */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fea201;
+  padding: 6vw 3vw 3vw 3vw;
+}
+.remark-detail .head-remark .return {
+  display: inline-block;
+  width: 7vw;
+  height: 7vw;
+}
+.remark-detail .head-remark .return img {
+  width: 100%;
+  height: 100%;
+}
+.remark-detail .head-remark h3 {
+  color: #fff;
+  font-size: 3rem;
+}
+.remark-detail .head-remark em {
+  display: inline-block;
+  width: 5vw;
+  height: 5vw;
+}
+.remark-detail main {
+  margin-top: 5vw;
+}
+.remark-detail main .remark-messages {
+  padding: 2vw 4vw 4vw;
+  font-weight: 600;
+  background-color: #f9f9f7;
+  font-size: 1.8rem;
+}
+.remark-detail main .remark-messages #clientName {
+  padding-bottom: 3vw;
+  font-size: 2rem;
+  border-bottom: 1px solid #c7c7c6;
+}
+.remark-detail main .remark-messages li {
+  padding: 2vw 0;
+}
+.remark-detail main #remarkTxt {
+  display: block;
+  width: 90vw;
+  margin: 5vw auto;
+  background-color: #f9f9f7;
+  border: inset;
+  height: 30vw;
+  outline: none;
+  font-size: 1.8rem;
+  padding: 2vw 3vw;
+  box-sizing: border-box;
+  resize: none;
+}
+.remark-detail main #remarkSave {
+  padding: 3vw 6vw;
+  background-color: #b5b5b5;
+  float: right;
+  margin: 0 10vw;
+  border-radius: 2vw;
+  font-weight: 600;
+}
+.remark-detail main .remarkSave {
+  color: #fff;
+  background-color: #fec601;
+}
+.remark-detail footer {
+  width: 43vw;
+  height: 23vw;
+  text-align: center;
+  margin: 35vw auto 0 auto;
+}
+.remark-detail footer img {
+  width: 100%;
+  height: 100%;
 }
