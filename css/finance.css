@@ -1,3 +1,8 @@
+.finance-home {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
 .finance-home .header-home {
   display: -webkit-flex;
   /* Safari */
@@ -22,7 +27,7 @@
   height: 100%;
 }
 .finance-home .header-home .head-message .sale-name {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-left: 1vw;
   font-weight: 600;
   color: #fff;
@@ -30,7 +35,7 @@
 .finance-home .header-home .exit {
   border-radius: 1vw;
   padding: 1vw 3vw;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   color: #333;
   background-color: #fff;
   font-weight: 600;
@@ -43,11 +48,11 @@
   background-color: #f9f9f7;
 }
 .finance-home .performance p {
-  font-size: 2rem;
+  font-size: 1.6rem;
   margin-bottom: 3vw;
 }
 .finance-home .performance span {
-  font-size: 3rem;
+  font-size: 2rem;
   font-style: normal;
 }
 .finance-home .main {
@@ -135,7 +140,7 @@
 }
 .nopayfee-client .head-order h3 {
   color: #fff;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .nopayfee-client .head-order em {
   display: inline-block;
@@ -151,7 +156,7 @@
   background-color: #f9f9f7;
 }
 .nopayfee-client main .clients .client-detail span {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-weight: 600;
 }
 .nopayfee-client main .clients .client-detail .client-head {
@@ -160,6 +165,9 @@
   padding-bottom: 2vw;
   justify-content: space-between;
   border-bottom: 1px solid #d6d6d4;
+}
+.nopayfee-client main .clients .client-detail .client-head em {
+  font-style: normal;
 }
 .nopayfee-client main .clients .client-detail .client-head .care-for {
   display: inline-block;
@@ -175,6 +183,11 @@
 }
 .nopayfee-client main .clients .client-detail .client-message li {
   padding: 2vw 0;
+}
+.nopayfee-client main .clients .client-detail .client-message .order-time {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
 }
 .nopayfee-client main .clients .client-detail .client-message .client-phone {
   display: -webkit-flex;
@@ -196,14 +209,69 @@
   display: -webkit-flex;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
 }
 .nopayfee-client main .clients .client-detail .client-message .client-money b {
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 .nopayfee-client main .clients .client-detail .client-message .client-money .verify-pay {
-  padding: 2vw 5vw;
+  padding: 1vw 3vw;
   color: #fff;
   background-color: #e60012;
+  font-weight: 600;
   border-radius: 2vw;
+}
+.nopayfee-client footer {
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  z-index: 200;
+}
+.nopayfee-client footer .logo {
+  display: inline-block;
+  margin: 5vw calc(35vw);
+  width: 30vw;
+  height: 15vw;
+}
+.nopayfee-client footer .logo img {
+  width: 100%;
+  height: 100%;
+}
+.nopayfee-client .collect-money {
+  margin: 0 3vw;
+  font-size: 1.6rem;
+}
+.nopayfee-client .collect-money .collect-message {
+  border-bottom: 1px solid #514c4d;
+  text-align: center;
+}
+.nopayfee-client .collect-money .collect-message .alert-ico {
+  display: inline-block;
+  width: 25vw;
+  height: 12vw;
+  margin-top: -14%;
+}
+.nopayfee-client .collect-money .collect-message .alert-ico img {
+  width: 100%;
+  height: 100%;
+}
+.nopayfee-client .collect-money .collect-message p {
+  margin: 2vw 0;
+}
+.nopayfee-client .collect-money .collect-message span {
+  display: inline-block;
+  margin-bottom: 2vw;
+}
+.nopayfee-client .collect-money .verify-button {
+  display: -webkit-flex;
+  display: flex;
+  margin: 3vw 3vw;
+  justify-content: space-between;
+}
+.nopayfee-client .collect-money .verify-button button {
+  padding: 2vw 5vw;
+  border-radius: 2vw;
+  background-color: #dcdcdc;
+  outline: none;
 }

@@ -22,7 +22,7 @@
             <article v-for="vm in items">
                 <div class="order-head">
                     <span>订单：K<b>{{vm.order_sn}}</b></span>
-                    <i class="order-page"><img src="../images/searchdetail.png" alt="查看订单详情"></i>
+                    <i class="order-page" @click="shopList(vm.order_id)"><img src="../images/searchdetail.png" alt="查看订单详情"></i>
                 </div>
                 <hr>
                 <ul class="order-introduces">
@@ -32,7 +32,7 @@
                     </li>
                     <li class="order-introduce">
                         <span class="order-money">金额：<em>{{vm.money_paid}}</em>元</span>
-                        <span class="order-state">状态：<em>已付款</em></span>
+                        <span class="order-state">状态：<em>{{vm.pay_status | payStatus}}</em></span>
                     </li>
                 </ul>
             </article>

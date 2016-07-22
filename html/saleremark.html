@@ -6,31 +6,33 @@
     <meta name="viewport" content="initial-scale=1.0,width=device-width,user-scalable=0,maximum-scale=1.0"/>
     <link rel="stylesheet" href="../css/public.css">
     <link rel="stylesheet" href="../css/sale.css">
+    <script src="../vendor/vue.js"></script>
+    <script src="../vendor/zepto.js"></script>
+    <script src="../vendor/zepto-touch.js"></script>
 </head>
-<body>
+<body id="remarkDetail">
     <div class="remark-detail">
         <header class="head-remark">
-            <i class="return"><img src="../images/return.png" alt="return"></i>
-            <h3>客户A</h3>
+            <i class="return" @click="backPage"><img src="../images/return.png" alt="return"></i>
+            <h3>{{items.user_name}}</h3>
             <em></em>
         </header>
         <main>
             <ul class="remark-messages">
-               <li id="clientName">客户A</li>
-               <li >联系方式<span id="clientPhone">13811254789</span></li>
-               <li >预约方式<span id="clientTime">2016.05.06 12:20</span></li>
+               <li id="clientName">{{items.user_name}}</li>
+               <li >联系方式：<span id="clientPhone">{{items.mobile_phone}}</span></li>
+               <li >预约时间：<span id="clientTime">{{items.reg_time}}</span></li>
             </ul>
-            <textarea id="remarkTxt" placeholder="请输入备注信息..."></textarea>
-            <input type="button" id="remarkSave" disabled value="保存">
+            <textarea id="remarkTxt" placeholder="请输入备注信息..." v-model="items.remarks"></textarea>
+            <div class="saveRow">
+                <input type="button" id="remarkSave" @click="save(items.remarks)" disabled value="保存">
+            </div>
         </main>
         <footer>
             <img src="../images/logo.png" alt="logo">
         </footer>
     </div>
-
-<script src="../vendor/zepto.js"></script>
-<script src="../vendor/zepto-touch.js"></script>
-<script src="../js/public.js"></script>
-<script src="../js/login.js"></script>
+    <script src="../js/public.js"></script>
+    <script src="../js/salemark.js"></script>
 </body>
 </html>

@@ -260,7 +260,7 @@ a {
     }
     h3{
       color: #fff;
-      font-size: 3rem;
+      font-size: 2rem;
     }
     em{
       display: inline-block;
@@ -276,7 +276,7 @@ a {
       display: -webkit-flex;
       display: flex;
       justify-content: space-between;
-      font-size: 2rem;
+      font-size: 1.6rem;
       font-weight: 600;
     }
     .list-message{
@@ -284,7 +284,7 @@ a {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       li{
         padding: 1.5vw 0;
       }
@@ -349,4 +349,29 @@ a {
       }
     }
   }
+}
+//遮罩层
+.all-cover{
+  //display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: #333;
+  opacity: 0.6;
+  z-index: 200;
+}
+.alert{
+  //display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 60vw;
+  height: 40vw;
+  margin: auto;
+  background-color: #fff;
+  z-index: 500;
 }

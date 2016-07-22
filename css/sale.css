@@ -28,7 +28,7 @@
 }
 .sale-order .head-order h3 {
   color: #fff;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .sale-order .head-order em {
   display: inline-block;
@@ -44,7 +44,7 @@
   background-color: #f9f9f7;
 }
 .sale-order main .clients .client-detail span {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 600;
 }
 .sale-order main .clients .client-detail .client-head {
@@ -61,6 +61,15 @@
   background: url("../images/care.png") no-repeat;
   background-size: 95%;
   background-position: 0 102%;
+  /*32.5*/
+}
+.sale-order main .clients .client-detail .client-head .cares-for {
+  display: inline-block;
+  width: 8vw;
+  height: 7vw;
+  background: url("../images/care.png") no-repeat;
+  background-size: 95%;
+  background-position: 0 32.5%;
   /*32.5*/
 }
 .sale-order main .clients .client-detail .client-message {
@@ -86,7 +95,7 @@
   font-style: normal;
 }
 .sale-order main .clients .client-detail .client-message .remark-message {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-weight: 500;
 }
 .sale-order footer {
@@ -126,7 +135,7 @@
 }
 .remark-detail .head-remark h3 {
   color: #fff;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .remark-detail .head-remark em {
   display: inline-block;
@@ -140,11 +149,10 @@
   padding: 2vw 4vw 4vw;
   font-weight: 600;
   background-color: #f9f9f7;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 .remark-detail main .remark-messages #clientName {
   padding-bottom: 3vw;
-  font-size: 2rem;
   border-bottom: 1px solid #c7c7c6;
 }
 .remark-detail main .remark-messages li {
@@ -163,17 +171,19 @@
   box-sizing: border-box;
   resize: none;
 }
-.remark-detail main #remarkSave {
-  padding: 3vw 6vw;
+.remark-detail main .saveRow {
+  margin: 0 auto;
+  width: 35vw;
+}
+.remark-detail main .saveRow #remarkSave {
+  padding: 4vw 15vw;
   background-color: #b5b5b5;
-  float: right;
-  margin: 0 10vw;
   border-radius: 2vw;
   font-weight: 600;
 }
 .remark-detail main .remarkSave {
   color: #fff;
-  background-color: #fec601;
+  background-color: #fec601!important;
 }
 .remark-detail footer {
   width: 43vw;

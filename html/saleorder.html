@@ -6,117 +6,49 @@
     <meta name="viewport" content="initial-scale=1.0,width=device-width,user-scalable=0,maximum-scale=1.0"/>
     <link rel="stylesheet" href="../css/public.css">
     <link rel="stylesheet" href="../css/sale.css">
+    <script src="../vendor/vue.js"></script>
+    <script src="../vendor/zepto.js"></script>
+    <script src="../vendor/zepto-touch.js"></script>
 </head>
-<body>
+<body id="saleOrder">
 <div class="sale-order">
     <header class="head-order">
-        <i class="return"><img src="../images/return.png" alt="return"></i>
+        <i class="return" @click="backPage"><img src="../images/return.png" alt="return"></i>
         <h3>预约客户</h3>
         <em></em>
     </header>
     <main>
         <ul class="clients">
             <!--一个客户-->
+            <template v-for="vm in items">
             <li class="client-detail">
                 <div class="client-head">
-                    <span>客户A</span>
-                    <i class="care-for"></i>
+                    <span>{{vm.user_name}}</span>
+                    <i v-if="vm.is_top=='1'" class="cares-for" @click="orders(vm.user_id)"></i>
+                    <i v-else class="care-for" @click="orders(vm.user_id)"></i>
                 </div>
                 <ul class="client-message">
                     <li class="client-phone">
-                        <span>联系方式：<em>13812341234</em></span>
-                        <i class="visit-client"></i>
+                        <span>联系方式：<em>{{vm.mobile_phone}}</em></span>
+                        <i class="visit-client" @click="clientMessage(vm.user_id)"></i>
                     </li>
                     <li class="order-time">
-                        <span>预约时间：<em>2016.05.06 12:20</em></span>
+                        <span>预约时间：<em>{{vm.reg_time}}</em></span>
                     </li>
                     <li class="client-remark">
-                        <b class="remark-message">备注：<em>电话沟通了，该用户想买299套餐</em></b>
+                        <b class="remark-message">备注：<em>{{vm.remarks}}</em></b>
                     </li>
                 </ul>
             </li>
+            </template>
 
-            <li class="client-detail">
-                <div class="client-head">
-                    <span>客户A</span>
-                    <i class="care-for"></i>
-                </div>
-                <ul class="client-message">
-                    <li class="client-phone">
-                        <span>联系方式：<em>13812341234</em></span>
-                        <i class="visit-client"></i>
-                    </li>
-                    <li class="order-time">
-                        <span>预约时间：<em>2016.05.06 12:20</em></span>
-                    </li>
-                    <li class="client-remark">
-                        <b class="remark-message">备注：<em>电话沟通了，该用户想买299套餐</em></b>
-                    </li>
-                </ul>
-            </li>
-            <li class="client-detail">
-                <div class="client-head">
-                    <span>客户A</span>
-                    <i class="care-for"></i>
-                </div>
-                <ul class="client-message">
-                    <li class="client-phone">
-                        <span>联系方式：<em>13812341234</em></span>
-                        <i class="visit-client"></i>
-                    </li>
-                    <li class="order-time">
-                        <span>预约时间：<em>2016.05.06 12:20</em></span>
-                    </li>
-                    <li class="client-remark">
-                        <b class="remark-message">备注：<em>电话沟通了，该用户想买299套餐</em></b>
-                    </li>
-                </ul>
-            </li>
-            <li class="client-detail">
-                <div class="client-head">
-                    <span>客户A</span>
-                    <i class="care-for"></i>
-                </div>
-                <ul class="client-message">
-                    <li class="client-phone">
-                        <span>联系方式：<em>13812341234</em></span>
-                        <i class="visit-client"></i>
-                    </li>
-                    <li class="order-time">
-                        <span>预约时间：<em>2016.05.06 12:20</em></span>
-                    </li>
-                    <li class="client-remark">
-                        <b class="remark-message">备注：<em>电话沟通了，该用户想买299套餐</em></b>
-                    </li>
-                </ul>
-            </li>
-            <li class="client-detail">
-                <div class="client-head">
-                    <span>客户A</span>
-                    <i class="care-for"></i>
-                </div>
-                <ul class="client-message">
-                    <li class="client-phone">
-                        <span>联系方式：<em>13812341234</em></span>
-                        <i class="visit-client"></i>
-                    </li>
-                    <li class="order-time">
-                        <span>预约时间：<em>2016.05.06 12:20</em></span>
-                    </li>
-                    <li class="client-remark">
-                        <b class="remark-message">备注：<em>电话沟通了，该用户想买299套餐</em></b>
-                    </li>
-                </ul>
-            </li>
         </ul>
     </main>
     <footer>
         <i class="logo"><img src="../images/logo.png" alt="logo"></i>
     </footer>
 </div>
-<script src="../vendor/zepto.js"></script>
-<script src="../vendor/zepto-touch.js"></script>
 <script src="../js/public.js"></script>
-<script src="../js/login.js"></script>
+<script src="../js/saleorder.js"></script>
 </body>
 </html>

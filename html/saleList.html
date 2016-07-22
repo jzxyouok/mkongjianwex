@@ -6,60 +6,64 @@
     <meta name="viewport" content="initial-scale=1.0,width=device-width,user-scalable=0,maximum-scale=1.0"/>
     <link rel="stylesheet" href="../css/public.css">
     <link rel="stylesheet" href="../css/sale.css">
+    <script src="../vendor/vue.js"></script>
+    <script src="../vendor/zepto.js"></script>
+    <script src="../vendor/zepto-touch.js"></script>
 </head>
-<body>
+<body id="listForm">
     <div class="list-form">
-        <header class="list-head">
-            <i class="return"><img src="../images/return.png" alt="return"></i>
+        <header class="list-head" >
+            <i class="return" @click="backPage"><img src="../images/return.png" alt="return"></i>
             <h3>清 单</h3>
             <em></em>
         </header>
         <main class="list-main">
             <div class="list-detail">
                 <div class="list-client">
-                    <span class="client-name">客户b</span>
-                    <span class="client-phone">18610471548</span>
+                    <span class="client-name">{{items.orders.consignee}}</span>
+                    <span class="client-phone">{{items.orders.mobile}}</span>
                 </div>
-                <span class="list-money">总计：35400元</span>
+                <span class="list-money">总计：{{items.orders.money_paid}}元</span>
             </div>
             <hr>
             <ul class="list-message">
                 <li class="pay-time">
-                    <span>付款时间：2016.05.06 12:20</span>
-                    <span>总件数：18</span>
+                    <span>付款时间：{{items.orders.pay_time}}</span>
+                    <span>总件数：{{items.orders.sum}}</span>
                 </li>
-                <li class="carriage-time">配送时间：2016.05.06 12:20</li>
-                <li class="carriage-name">配送人：XXX</li>
-                <li class="carriage-address">地址：北京市朝阳区成寿寺A小区x号楼X单元XXX</li>
+                <li class="carriage-time">配送时间：</li>
+                <li class="carriage-name">配送人：</li>
+                <li class="carriage-address">地址：{{items.orders.cname}}{{items.orders.pname}}{{items.orders.address}}</li>
             </ul>
             <!--产品清单-->
-            <div class="list-product">
+            <div class="list-product" >
                 <hr>
                 <b>产品清单</b>
                 <!--一个商品分类-->
+                <template v-for="vms in items.list">
                 <ul class="product-module">
                     <i class="module-ico"><img src="../images/module_1.png" alt="ico"></i>
-                    <span class="module-name">卧室</span>
-                    <li class="product-detail">
-                        <i class="product-img"><img src="../images/demo.jpg" alt=""></i>
+                    <span class="module-name">{{$key | room}}</span>
+                    <li class="product-detail" v-for="vm in vms">
+                        <i class="product-img"><img v-bind:src="../../(vm.goods_img)" alt=""></i>
                         <div class="product-message">
-                            <p>商品名称：地中海风格 人气爆款 栅栏式</p>
-                            <p>数量：1件</p>
-                            <p>类型：经典款 1.8</p>
+                            <p>{{vm.goods_name}}</p>
+                            <p>数量：{{vm.goods_number}}件</p>
+                            <p>{{vm.goods_attr}}</p>
                         </div>
                     </li>
 
-                    <li class="product-detail">
+                  <!--  <li class="product-detail">
                         <i class="product-img"><img src="../images/demo.jpg" alt=""></i>
                         <div class="product-message">
                             <p>商品名称：地中海风格 人气爆款 栅栏式</p>
                             <p>数量：1件</p>
                             <p>类型：经典款 1.8</p>
                         </div>
-                    </li>
+                    </li>-->
                 </ul>
-
-                <ul class="product-module">
+                </template>
+              <!--  <ul class="product-module">
                     <i class="module-ico"><img src="../images/module_2.png" alt="ico"></i>
                     <span class="module-name">餐厅</span>
                     <li class="product-detail">
@@ -79,14 +83,12 @@
                             <p>类型：经典款 1.8</p>
                         </div>
                     </li>
-                </ul>
+                </ul>-->
             </div>
         </main>
     </div>
 
-<script src="../vendor/zepto.js"></script>
-<script src="../vendor/zepto-touch.js"></script>
-<script src="../js/public.js"></script>
-<script src="../js/login.js"></script>
+    <script src="../js/public.js"></script>
+    <script src="../js/saleList.js"></script>
 </body>
 </html>

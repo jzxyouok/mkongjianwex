@@ -31,6 +31,9 @@ $(document).ready(function(){
     });
     //跳转业绩查询和预约
     $("#performance-searchs").click(function(){
-        location.href = 'saleperformance.html?user_id='+id
-    })
+        location.href = 'saleperformance.html?user_id='+id;
+    });
+    $("#orderClient").click(function(){
+        location.href = 'saleorder.html?user_id='+id;
+    });
 });
