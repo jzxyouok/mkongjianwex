@@ -351,6 +351,7 @@ a {
   padding-bottom: 1vw;
 }
 .all-cover {
+  display: none;
   position: fixed;
   left: 0;
   right: 0;
@@ -361,6 +362,7 @@ a {
   z-index: 200;
 }
 .alert {
+  display: none;
   position: fixed;
   left: 0;
   right: 0;

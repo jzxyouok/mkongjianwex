@@ -245,6 +245,7 @@
 .nopayfee-client .collect-money .collect-message {
   border-bottom: 1px solid #514c4d;
   text-align: center;
+  font-size: 1.2rem;
 }
 .nopayfee-client .collect-money .collect-message .alert-ico {
   display: inline-block;
@@ -274,4 +275,787 @@
   border-radius: 2vw;
   background-color: #dcdcdc;
   outline: none;
+}
+.financeClientPay {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+.financeClientPay .head-clientPay {
+  display: -webkit-flex;
+  /* Safari */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fea201;
+  padding: 6vw 3vw 3vw 3vw;
+}
+.financeClientPay .head-clientPay .return {
+  display: inline-block;
+  width: 7vw;
+  height: 7vw;
+}
+.financeClientPay .head-clientPay .return img {
+  width: 100%;
+  height: 100%;
+}
+.financeClientPay .head-clientPay h3 {
+  color: #fff;
+  font-size: 2rem;
+}
+.financeClientPay .head-clientPay em {
+  display: inline-block;
+  width: 7vw;
+  height: 7vw;
+}
+.financeClientPay .head-clientPay em img {
+  width: 100%;
+  height: 100%;
+}
+.financeClientPay main {
+  flex: 1;
+  margin-bottom: 20vw;
+}
+.financeClientPay main .order-record {
+  margin-top: 5vw;
+  padding: 4vw;
+  background-color: #f9f9f7;
+}
+.financeClientPay main .order-record li {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1vw;
+}
+.financeClientPay main .order-record li span {
+  font-size: 1.5rem;
+}
+.financeClientPay main .order-record li em {
+  font-style: normal;
+  font-size: 1.2rem;
+}
+.financeClientPay main .order-record li b {
+  font-size: 2rem;
+}
+.financeClientPay main .client-list {
+  margin-top: 5vw;
+  padding: 4vw;
+  font-weight: 600;
+  background-color: #f9f9f7;
+}
+.financeClientPay main .client-list .client-name {
+  display: -webkit-flex;
+  display: flex;
+  padding-bottom: 5vw;
+  margin-bottom: 3vw;
+  border-bottom: 1px solid #333;
+  justify-content: space-between;
+}
+.financeClientPay main .client-list .client-name span {
+  font-size: 1.6rem;
+}
+.financeClientPay main .client-list .client-name span em {
+  font-style: normal;
+}
+.financeClientPay main .client-list .client-name i {
+  display: inline-block;
+  width: 5vw;
+  height: 3.8vw;
+}
+.financeClientPay main .client-list .client-name i img {
+  width: 100%;
+  height: 100%;
+}
+.financeClientPay main .client-list .client-time,
+.financeClientPay main .client-list .client-status,
+.financeClientPay main .client-list .client-pay {
+  display: -webkit-flex;
+  display: flex;
+  padding-top: 3vw;
+  justify-content: space-between;
+}
+.financeClientPay main .client-list .client-time .pay-number,
+.financeClientPay main .client-list .client-status .pay-number,
+.financeClientPay main .client-list .client-pay .pay-number {
+  font-size: 1.8rem;
+}
+.financeClientPay main .client-list .client-time .refund,
+.financeClientPay main .client-list .client-status .refund,
+.financeClientPay main .client-list .client-pay .refund {
+  padding: 1vw 4vw;
+  background-color: #e50212;
+  color: #fff;
+  border-radius: 3vw;
+}
+.financeClientPay footer {
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  z-index: 200;
+}
+.financeClientPay footer .logo {
+  display: inline-block;
+  margin: 5vw calc(35vw);
+  width: 30vw;
+  height: 15vw;
+}
+.financeClientPay footer .logo img {
+  width: 100%;
+  height: 100%;
+}
+.financeClientPay .client-pay-search {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 80vw;
+  height: 88vw;
+  margin: auto;
+  background-color: #fff;
+  z-index: 500;
+}
+.financeClientPay .client-pay-search .head {
+  padding: 2vw 0;
+  text-align: center;
+  background-color: #ef820b;
+  color: #fff;
+  font-size: 1.6rem;
+}
+.financeClientPay .client-pay-search .mid {
+  margin: 5vw 5vw 3vw 5vw;
+  height: 47vw;
+  border-top: 1px solid #d5d4d5;
+  border-left: 1px solid #d5d4d5;
+  overflow: auto;
+  overflow-x: hidden;
+}
+.financeClientPay .client-pay-search .mid ul li {
+  display: inline-block;
+  margin: 3vw 5vw 0 5vw;
+}
+.financeClientPay .client-pay-search .mid ul li span {
+  display: inline-block;
+  padding: 2vw 5vw;
+  margin: 0 2vw 2vw 0;
+  background-color: #e4e4e4;
+}
+.financeClientPay .client-pay-search .foot-search {
+  text-align: center;
+}
+.financeClientPay .client-pay-search .foot-search button {
+  padding: 2vw 15vw;
+  background-color: #d1d1d1;
+  border-radius: 4vw;
+  outline: none;
+}
+.financeClientPay .client-pay-search .foot-search button i {
+  display: inline-block;
+  width: 5vw;
+  height: 5vw;
+  vertical-align: top;
+}
+.financeClientPay .client-pay-search .foot-search button i img {
+  width: 100%;
+  height: 100%;
+}
+.finance-factoryPay {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+.finance-factoryPay .head-factoryPay {
+  display: -webkit-flex;
+  /* Safari */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fea201;
+  padding: 6vw 3vw 3vw 3vw;
+}
+.finance-factoryPay .head-factoryPay .return {
+  display: inline-block;
+  width: 7vw;
+  height: 7vw;
+}
+.finance-factoryPay .head-factoryPay .return img {
+  width: 100%;
+  height: 100%;
+}
+.finance-factoryPay .head-factoryPay h3 {
+  color: #fff;
+  font-size: 2rem;
+}
+.finance-factoryPay .head-factoryPay em {
+  display: inline-block;
+  width: 7vw;
+  height: 7vw;
+}
+.finance-factoryPay .head-factoryPay em img {
+  width: 100%;
+  height: 100%;
+}
+.finance-factoryPay main {
+  flex: 1;
+  margin-bottom: 30vw;
+}
+.finance-factoryPay main .order-record {
+  margin-top: 5vw;
+  padding: 4vw;
+  background-color: #f9f9f7;
+}
+.finance-factoryPay main .order-record li {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1vw;
+}
+.finance-factoryPay main .order-record li span {
+  font-size: 1.5rem;
+}
+.finance-factoryPay main .order-record li em {
+  font-style: normal;
+  font-size: 1.2rem;
+}
+.finance-factoryPay main .order-record li b {
+  font-size: 2rem;
+}
+.finance-factoryPay main .factory-list {
+  margin-top: 5vw;
+  padding: 4vw;
+  font-weight: 600;
+  background-color: #f9f9f7;
+}
+.finance-factoryPay main .factory-list .factory-name {
+  display: -webkit-flex;
+  display: flex;
+  padding-bottom: 5vw;
+  margin-bottom: 3vw;
+  border-bottom: 1px solid #333;
+  align-items: center;
+  justify-content: space-between;
+}
+.finance-factoryPay main .factory-list .factory-name span {
+  font-size: 1.5rem;
+}
+.finance-factoryPay main .factory-list .factory-name span em {
+  font-style: normal;
+}
+.finance-factoryPay main .factory-list .factory-name i {
+  display: inline-block;
+  width: 5vw;
+  height: 3.8vw;
+}
+.finance-factoryPay main .factory-list .factory-name i img {
+  width: 100%;
+  height: 100%;
+}
+.finance-factoryPay main .factory-list li {
+  display: -webkit-flex;
+  display: flex;
+  padding-top: 3vw;
+  justify-content: space-between;
+}
+.finance-factoryPay main .factory-list li em {
+  font-size: 1.8rem;
+}
+.finance-factoryPay main .factory-list li .verity-pay {
+  padding: 1vw 4vw;
+  background-color: #e50212;
+  color: #fff;
+  border-radius: 3vw;
+}
+.finance-factoryPay main .bank-message {
+  padding: 2vw 4vw;
+}
+.finance-factoryPay footer {
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  z-index: 200;
+}
+.finance-factoryPay footer .logo {
+  display: inline-block;
+  margin: 5vw calc(35vw);
+  width: 30vw;
+  height: 15vw;
+}
+.finance-factoryPay footer .logo img {
+  width: 100%;
+  height: 100%;
+}
+.finance-factoryPay .client-pay-search {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 80vw;
+  height: 88vw;
+  margin: auto;
+  background-color: #fff;
+  z-index: 500;
+}
+.finance-factoryPay .client-pay-search .head {
+  padding: 2vw 0;
+  text-align: center;
+  background-color: #ef820b;
+  color: #fff;
+  font-size: 1.6rem;
+}
+.finance-factoryPay .client-pay-search .mid {
+  margin: 5vw 5vw 3vw 5vw;
+  height: 47vw;
+  border-top: 1px solid #d5d4d5;
+  border-left: 1px solid #d5d4d5;
+  overflow: auto;
+  overflow-x: hidden;
+}
+.finance-factoryPay .client-pay-search .mid ul li {
+  display: inline-block;
+  margin: 3vw 5vw 0 5vw;
+}
+.finance-factoryPay .client-pay-search .mid ul li span {
+  display: inline-block;
+  padding: 2vw 5vw;
+  margin: 0 2vw 2vw 0;
+  background-color: #e4e4e4;
+}
+.finance-factoryPay .client-pay-search .foot-search {
+  text-align: center;
+}
+.finance-factoryPay .client-pay-search .foot-search button {
+  padding: 2vw 15vw;
+  background-color: #d1d1d1;
+  border-radius: 4vw;
+  outline: none;
+}
+.finance-factoryPay .client-pay-search .foot-search button i {
+  display: inline-block;
+  width: 5vw;
+  height: 5vw;
+  vertical-align: top;
+}
+.finance-factoryPay .client-pay-search .foot-search button i img {
+  width: 100%;
+  height: 100%;
+}
+.finance-factory {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+.finance-factory .head-factoryPay {
+  display: -webkit-flex;
+  /* Safari */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fea201;
+  padding: 6vw 3vw 3vw 3vw;
+}
+.finance-factory .head-factoryPay .return {
+  display: inline-block;
+  width: 7vw;
+  height: 7vw;
+}
+.finance-factory .head-factoryPay .return img {
+  width: 100%;
+  height: 100%;
+}
+.finance-factory .head-factoryPay h3 {
+  color: #fff;
+  font-size: 2rem;
+}
+.finance-factory .head-factoryPay em {
+  display: inline-block;
+  width: 7vw;
+  height: 7vw;
+}
+.finance-factory .head-factoryPay em img {
+  width: 100%;
+  height: 100%;
+}
+.finance-factory main {
+  flex: 1;
+  margin-bottom: 30vw;
+}
+.finance-factory main .factory-list {
+  margin-top: 5vw;
+  padding: 4vw;
+  font-weight: 600;
+  background-color: #f9f9f7;
+}
+.finance-factory main .factory-list .factory-name {
+  display: -webkit-flex;
+  display: flex;
+  padding-bottom: 5vw;
+  margin-bottom: 3vw;
+  border-bottom: 1px solid #333;
+  align-items: center;
+  justify-content: space-between;
+}
+.finance-factory main .factory-list .factory-name span {
+  font-size: 1.5rem;
+}
+.finance-factory main .factory-list .factory-name span em {
+  font-style: normal;
+}
+.finance-factory main .factory-list .factory-name i {
+  display: inline-block;
+  width: 5vw;
+  height: 3.8vw;
+}
+.finance-factory main .factory-list .factory-name i img {
+  width: 100%;
+  height: 100%;
+}
+.finance-factory main .factory-list li {
+  display: -webkit-flex;
+  display: flex;
+  padding-top: 3vw;
+  justify-content: space-between;
+}
+.finance-factory main .factory-list li em {
+  font-size: 1.8rem;
+}
+.finance-factory main .factory-list li .verity-pay {
+  padding: 1vw 4vw;
+  background-color: #e50212;
+  color: #fff;
+  border-radius: 3vw;
+}
+.finance-factory main .bank-message {
+  padding: 2vw 4vw;
+}
+.finance-factory footer {
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  z-index: 200;
+}
+.finance-factory footer .logo {
+  display: inline-block;
+  margin: 5vw calc(35vw);
+  width: 30vw;
+  height: 15vw;
+}
+.finance-factory footer .logo img {
+  width: 100%;
+  height: 100%;
+}
+.finance-factory .collect-money {
+  margin: 0 3vw;
+  font-size: 1.6rem;
+}
+.finance-factory .collect-money .collect-message {
+  border-bottom: 1px solid #514c4d;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.finance-factory .collect-money .collect-message .alert-ico {
+  display: inline-block;
+  width: 25vw;
+  height: 12vw;
+  margin-top: -14%;
+}
+.finance-factory .collect-money .collect-message .alert-ico img {
+  width: 100%;
+  height: 100%;
+}
+.finance-factory .collect-money .collect-message p {
+  margin: 2vw 0;
+}
+.finance-factory .collect-money .collect-message span {
+  display: inline-block;
+  margin-bottom: 2vw;
+}
+.finance-factory .collect-money .verify-button {
+  display: -webkit-flex;
+  display: flex;
+  margin: 3vw 3vw;
+  justify-content: space-between;
+}
+.finance-factory .collect-money .verify-button button {
+  padding: 2vw 5vw;
+  border-radius: 2vw;
+  background-color: #dcdcdc;
+  outline: none;
+}
+.finance-factory .client-pay-search {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 80vw;
+  height: 88vw;
+  margin: auto;
+  background-color: #fff;
+  z-index: 500;
+}
+.finance-factory .client-pay-search .head {
+  padding: 2vw 0;
+  text-align: center;
+  background-color: #ef820b;
+  color: #fff;
+  font-size: 1.6rem;
+}
+.finance-factory .client-pay-search .mid {
+  margin: 5vw 5vw 3vw 5vw;
+  height: 47vw;
+  border-top: 1px solid #d5d4d5;
+  border-left: 1px solid #d5d4d5;
+  overflow: auto;
+  overflow-x: hidden;
+}
+.finance-factory .client-pay-search .mid ul li {
+  display: inline-block;
+  margin: 3vw 5vw 0 5vw;
+}
+.finance-factory .client-pay-search .mid ul li span {
+  display: inline-block;
+  padding: 2vw 5vw;
+  margin: 0 2vw 2vw 0;
+  background-color: #e4e4e4;
+}
+.finance-factory .client-pay-search .foot-search {
+  text-align: center;
+}
+.finance-factory .client-pay-search .foot-search button {
+  padding: 2vw 15vw;
+  background-color: #d1d1d1;
+  border-radius: 4vw;
+  outline: none;
+}
+.finance-factory .client-pay-search .foot-search button i {
+  display: inline-block;
+  width: 5vw;
+  height: 5vw;
+  vertical-align: top;
+}
+.finance-factory .client-pay-search .foot-search button i img {
+  width: 100%;
+  height: 100%;
+}
+.finance-list .list-head {
+  display: -webkit-flex;
+  /* Safari */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fea201;
+  padding: 6vw 3vw 3vw 3vw;
+}
+.finance-list .list-head .return {
+  display: inline-block;
+  width: 7vw;
+  height: 7vw;
+}
+.finance-list .list-head .return img {
+  width: 100%;
+  height: 100%;
+}
+.finance-list .list-head h3 {
+  color: #fff;
+  font-size: 2rem;
+}
+.finance-list .list-head em {
+  display: inline-block;
+  width: 5vw;
+  height: 5vw;
+}
+.finance-list main {
+  margin-top: 5vw;
+  padding: 4vw;
+}
+.finance-list main .client-name {
+  display: -webkit-flex;
+  display: flex;
+  padding-bottom: 2vw;
+  border-bottom: 1px solid #333;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.finance-list main .client-name em {
+  font-style: normal;
+}
+.finance-list main ul {
+  margin-top: 5vw;
+}
+.finance-list main ul li {
+  display: -webkit-flex;
+  display: flex;
+  padding: 1.5vw 0;
+  justify-content: space-between;
+  align-items: center;
+}
+.finance-list main .list-product {
+  margin-top: 10vw;
+}
+.finance-list main .list-product b {
+  display: block;
+  width: 30vw;
+  text-align: center;
+  margin: -4vw auto 0 auto;
+  background-color: #f9f9f7;
+  font-size: 2rem;
+}
+.finance-list main .list-product hr {
+  width: 80vw;
+  margin: 0 auto;
+}
+.finance-list main .list-product .product-module {
+  margin-top: 5vw;
+}
+.finance-list main .list-product .product-module .module-ico {
+  display: inline-block;
+  vertical-align: middle;
+  width: 10vw;
+  height: 5vw;
+}
+.finance-list main .list-product .product-module .module-ico img {
+  width: 100%;
+  height: 100%;
+}
+.finance-list main .list-product .product-module .module-name {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.5rem;
+}
+.finance-list main .list-product .product-module .product-detail {
+  padding: 2vw 0;
+  border-bottom: 1px dashed #333;
+}
+.finance-list main .list-product .product-module .product-detail .product-img {
+  display: inline-block;
+  width: 45vw;
+  height: 28vw;
+}
+.finance-list main .list-product .product-module .product-detail .product-img img {
+  width: 100%;
+  height: 100%;
+}
+.finance-list main .list-product .product-module .product-detail .product-message {
+  display: inline-block;
+  width: 45vw;
+  vertical-align: top;
+}
+.finance-list main .list-product .product-module .product-detail .product-message p {
+  padding-bottom: 1vw;
+}
+.finance-factoryList .list-head {
+  display: -webkit-flex;
+  /* Safari */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fea201;
+  padding: 6vw 3vw 3vw 3vw;
+}
+.finance-factoryList .list-head .return {
+  display: inline-block;
+  width: 7vw;
+  height: 7vw;
+}
+.finance-factoryList .list-head .return img {
+  width: 100%;
+  height: 100%;
+}
+.finance-factoryList .list-head h3 {
+  color: #fff;
+  font-size: 2rem;
+}
+.finance-factoryList .list-head em {
+  display: inline-block;
+  width: 5vw;
+  height: 5vw;
+}
+.finance-factoryList main {
+  margin-top: 5vw;
+  padding: 4vw;
+}
+.finance-factoryList main .client-name {
+  display: -webkit-flex;
+  display: flex;
+  padding-bottom: 2vw;
+  border-bottom: 1px solid #333;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.finance-factoryList main .client-name em {
+  font-style: normal;
+}
+.finance-factoryList main ul {
+  margin-top: 5vw;
+}
+.finance-factoryList main ul li {
+  display: -webkit-flex;
+  display: flex;
+  padding: 1.5vw 0;
+  justify-content: space-between;
+  align-items: center;
+}
+.finance-factoryList main .list-product {
+  margin-top: 10vw;
+}
+.finance-factoryList main .list-product b {
+  display: block;
+  width: 30vw;
+  text-align: center;
+  margin: -4vw auto 0 auto;
+  background-color: #f9f9f7;
+  font-size: 2rem;
+}
+.finance-factoryList main .list-product hr {
+  width: 80vw;
+  margin: 0 auto;
+}
+.finance-factoryList main .list-product .product-module {
+  margin-top: 5vw;
+}
+.finance-factoryList main .list-product .product-module .module-ico {
+  display: inline-block;
+  vertical-align: middle;
+  width: 10vw;
+  height: 5vw;
+}
+.finance-factoryList main .list-product .product-module .module-ico img {
+  width: 100%;
+  height: 100%;
+}
+.finance-factoryList main .list-product .product-module .module-name {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.5rem;
+}
+.finance-factoryList main .list-product .product-module .product-detail {
+  padding: 2vw 0;
+  border-bottom: 1px dashed #333;
+}
+.finance-factoryList main .list-product .product-module .product-detail .product-img {
+  display: inline-block;
+  width: 45vw;
+  height: 28vw;
+}
+.finance-factoryList main .list-product .product-module .product-detail .product-img img {
+  width: 100%;
+  height: 100%;
+}
+.finance-factoryList main .list-product .product-module .product-detail .product-message {
+  display: inline-block;
+  width: 45vw;
+  vertical-align: top;
+}
+.finance-factoryList main .list-product .product-module .product-detail .product-message p {
+  padding-bottom: 1vw;
 }

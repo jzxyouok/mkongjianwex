@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>客户已缴费</title>
+    <meta name="viewport" content="initial-scale=1.0,width=device-width,user-scalable=0,maximum-scale=1.0"/>
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/finance.css">
+</head>
+<body>
+<div class="financeClientPay">
+    <header class="head-clientPay">
+        <i class="return" @click="backPage"><img src="../images/return.png" alt="return"></i>
+        <h3>客户已缴费</h3>
+        <em><img src="../images/serach1.png" alt=""></em>
+    </header>
+    <main>
+        <ul class="order-record">
+            <li><span>本月已付款15次</span> <em>合计：</em></li>
+            <li><span></span> <b>98700元</b></li>
+        </ul>
+        <!--一个客户 已退款-->
+        <ul class="client-list">
+            <li class=client-name>
+                <span>客户姓名  <em>18610471789</em></span>
+                <i ><img src="../images/searchdetail.png" alt="查看订单详情"></i>
+            </li>
+            <li class="client-time">
+                <span>提交时间：2015.05.12 12:20</span>
+                <span>总件数：18件</span>
+            </li>
+            <li class="client-status">
+                <span>已付款</span>
+                <span>收款人：陆军有</span>
+            </li>
+            <li class="client-pay">
+                <span class="pay-number">38557元</span>
+                <span>退款人：王愉快</span>
+            </li>
+        </ul>
+
+        <!--一个客户 未退款-->
+        <ul class="client-list">
+            <li class=client-name>
+                <span>客户姓名  <em>18610471789</em></span>
+                <i ><img src="../images/searchdetail.png" alt="查看订单详情"></i>
+            </li>
+            <li class="client-time">
+                <span>提交时间：2015.05.12 12:20</span>
+                <span>总件数：18件</span>
+            </li>
+            <li class="client-status">
+                <span>已付款</span>
+                <span>收款人：陆军有</span>
+            </li>
+            <li class="client-pay">
+                <span class="pay-number">38557元</span>
+                <span class="refund">退款 (H)</span>
+            </li>
+        </ul>
+        <ul class="client-list">
+            <li class=client-name>
+                <span>客户姓名  <em>18610471789</em></span>
+                <i ><img src="../images/searchdetail.png" alt="查看订单详情"></i>
+            </li>
+            <li class="client-time">
+                <span>提交时间：2015.05.12 12:20</span>
+                <span>总件数：18件</span>
+            </li>
+            <li class="client-status">
+                <span>已付款</span>
+                <span>收款人：陆军有</span>
+            </li>
+            <li class="client-pay">
+                <span class="pay-number">38557元</span>
+                <span class="refund">退款 (H)</span>
+            </li>
+        </ul>
+        <ul class="client-list">
+            <li class=client-name>
+                <span>客户姓名  <em>18610471789</em></span>
+                <i ><img src="../images/searchdetail.png" alt="查看订单详情"></i>
+            </li>
+            <li class="client-time">
+                <span>提交时间：2015.05.12 12:20</span>
+                <span>总件数：18件</span>
+            </li>
+            <li class="client-status">
+                <span>已付款</span>
+                <span>收款人：陆军有</span>
+            </li>
+            <li class="client-pay">
+                <span class="pay-number">38557元</span>
+                <span class="refund">退款 (H)</span>
+            </li>
+        </ul>
+        <ul class="client-list">
+            <li class=client-name>
+                <span>客户姓名  <em>18610471789</em></span>
+                <i ><img src="../images/searchdetail.png" alt="查看订单详情"></i>
+            </li>
+            <li class="client-time">
+                <span>提交时间：2015.05.12 12:20</span>
+                <span>总件数：18件</span>
+            </li>
+            <li class="client-status">
+                <span>已付款</span>
+                <span>收款人：陆军有</span>
+            </li>
+            <li class="client-pay">
+                <span class="pay-number">38557元</span>
+                <span class="refund">退款 (H)</span>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <i class="logo"><img src="../images/logo.png" alt="logo"></i>
+    </footer>
+    <div id="financeSearch" class="client-pay-search">
+        <div class="head">
+            查询
+        </div>
+        <div class="mid">
+            <ul>
+                <li><span>2016年</span></li>
+                <li><span>1月</span><span>2月</span><span>3月</span></li>
+                <li><span>销售经理1</span><span>销售经理2</span></li>
+
+            </ul>
+        </div>
+        <div class="foot-search">
+            <button>查 询 订 单 <i><img src="../images/search.png" alt=""></i></button>
+        </div>
+    </div>
+</div>
+<div class="all-cover" id="allCover"></div>
+<script src="../vendor/zepto.js"></script>
+<script src="../vendor/zepto-touch.js"></script>
+<script src="../js/public.js"></script>
+
+</body>
+</html>

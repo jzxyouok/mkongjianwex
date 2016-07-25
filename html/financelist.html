@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>清单</title>
+    <meta name="viewport" content="initial-scale=1.0,width=device-width,user-scalable=0,maximum-scale=1.0"/>
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/finance.css">
+    <script src="../vendor/vue.js"></script>
+    <script src="../vendor/zepto.js"></script>
+    <script src="../vendor/zepto-touch.js"></script>
+</head>
+<body>
+    <div class="finance-list">
+        <header class="list-head" >
+            <i class="return" @click="backPage"><img src="../images/return.png" alt="return"></i>
+            <h3>清 单</h3>
+            <em></em>
+        </header>
+        <main>
+            <div class="client-name">
+                <span>客户姓名A <em>18610471793</em></span>
+                <span>总件数：18件</span>
+            </div>
+            <ul>
+                <li><span>销售经理：黄晓明</span></li>
+                <li><span>订单号：111111</span> </li>
+                <li><span>客户提交时间：20160807</span></li>
+                <li><span>客户付款时间：20160807</span></li>
+                <li><span>送货费：800元</span></li>
+                <li><span>+安装费：800元</span><span>共计：</span></li>
+                <li><span>+软装费：20000元</span><span style="font-size: 1.8rem">19600元</span></li>
+            </ul>
+            <!--产品-->
+            <!--产品清单-->
+            <div class="list-product" >
+                <hr>
+                <b>产品清单</b>
+                <!--一个商品分类-->
+                <ul class="product-module">
+                    <i class="module-ico"><img src="../images/module_1.png" alt="ico"></i>
+                    <span class="module-name"></span>
+                    <li class="product-detail" v-for="vm in vms">
+                        <i class="product-img"><img src="../images/demo.jpg" alt=""></i>
+                        <div class="product-message">
+                            <p>{{vm.goods_name}}</p>
+                            <p>数量：{{vm.goods_number}}件</p>
+                            <p>{{vm.goods_attr}}</p>
+                        </div>
+                    </li>
+
+
+                </ul>
+
+
+            </div>
+        </main>
+    </div>
+    <script src="../js/public.js"></script>
+    <script src="../js/saleList.js"></script>
+</body>
+</html>

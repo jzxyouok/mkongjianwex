@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>付款给厂家</title>
+    <meta name="viewport" content="initial-scale=1.0,width=device-width,user-scalable=0,maximum-scale=1.0"/>
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/finance.css">
+</head>
+<body>
+    <div class="finance-factory">
+        <header class="head-factoryPay">
+            <i class="return" @click="backPage"><img src="../images/return.png" alt="return"></i>
+            <h3>付款给厂家</h3>
+            <em><img src="../images/serach1.png" alt=""></em>
+        </header>
+        <main>
+            <!--一个客户 已退款-->
+            <ul class="factory-list">
+                <li class=factory-name>
+                    <span>厂家A  <em>订单号：125457515484</em></span>
+                    <i ><img src="../images/searchdetail.png" alt="查看订单详情"></i>
+                </li>
+                <li class="factory-time">
+                    <span>订单生效时间：2015.05.12 12:20</span>
+                </li>
+                <li class="factory-number">
+                    <span>总件数：18件</span>
+                </li>
+                <li class="factory-pay">
+                    <span>应付：<em>38557元</em></span>
+                    <span class="verity-pay">确认付款</span>
+                </li>
+            </ul>
+            <p class="bank-message">付款账户：账户名  银行名称 卡号：62220123456798</p>
+
+            <!--一个客户 已退款-->
+            <ul class="factory-list">
+                <li class=factory-name>
+                    <span>厂家A  <em>订单号：125457515484</em></span>
+                    <i ><img src="../images/searchdetail.png" alt="查看订单详情"></i>
+                </li>
+                <li class="factory-time">
+                    <span>订单生效时间：2015.05.12 12:20</span>
+                </li>
+                <li class="factory-number">
+                    <span>总件数：18件</span>
+                </li>
+                <li class="factory-pay">
+                    <span>应付：<em>38557元</em></span>
+                    <span class="verity-pay">确认付款</span>
+                </li>
+            </ul>
+            <p class="bank-message">付款账户：账户名  银行名称 卡号：62220123456798</p>
+
+            <!--一个客户 已退款-->
+            <ul class="factory-list">
+                <li class=factory-name>
+                    <span>厂家A  <em>订单号：125457515484</em></span>
+                    <i ><img src="../images/searchdetail.png" alt="查看订单详情"></i>
+                </li>
+                <li class="factory-time">
+                    <span>订单生效时间：2015.05.12 12:20</span>
+                </li>
+                <li class="factory-number">
+                    <span>总件数：18件</span>
+                </li>
+                <li class="factory-pay">
+                    <span>应付：<em>38557元</em></span>
+                    <span class="verity-pay">确认付款</span>
+                </li>
+            </ul>
+            <p class="bank-message">付款账户：账户名  银行名称 卡号：62220123456798</p>
+
+        </main>
+        <footer>
+            <i class="logo"><img src="../images/logo.png" alt="logo"></i>
+        </footer>
+        <!--确认收货-->
+        <div class="alert" id="collectMoney">
+            <div class="collect-money">
+                <div class="collect-message">
+                    <i class="alert-ico"><img src="../images/alert.png" alt=""></i>
+                    <p>请确认将货款</p>
+                    <span>支付到厂家指定银行账号</span>
+                </div>
+                <div class="verify-button">
+                    <button id="sure">确认</button>
+                    <button id="cancel">取消</button>
+                </div>
+            </div>
+        </div>
+        <!--搜索-->
+        <div id="financeSearch" class="client-pay-search">
+            <div class="head">
+                查询
+            </div>
+            <div class="mid">
+                <ul>
+                    <li><span>厂家A</span><span>厂家A</span><span>厂家A</span></li>
+
+                </ul>
+            </div>
+            <div class="foot-search">
+                <button>查 询 清 单 <i><img src="../images/search.png" alt=""></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="all-cover" id="allCover"></div>
+    <script src="../vendor/zepto.js"></script>
+    <script src="../vendor/zepto-touch.js"></script>
+    <script src="../js/public.js"></script>
+</body>
+</html>

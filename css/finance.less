@@ -245,6 +245,7 @@
     .collect-message{
       border-bottom: 1px solid #514c4d;
       text-align: center;
+      font-size: 1.2rem;
       .alert-ico{
         display: inline-block;
         width: 25vw;
@@ -273,6 +274,796 @@
         border-radius: 2vw;
         background-color: #dcdcdc;
         outline: none;
+      }
+    }
+  }
+}
+//客户已缴费
+.financeClientPay{
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+  .head-clientPay{
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fea201;
+    padding:6vw 3vw 3vw 3vw;
+    .return{
+      display: inline-block;
+      width: 7vw;
+      height: 7vw;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    h3{
+      color: #fff;
+      font-size: 2rem;
+    }
+    em{
+      display: inline-block;
+      width: 7vw;
+      height: 7vw;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  main{
+    flex: 1;
+    margin-bottom: 20vw;
+    .order-record{
+      margin-top: 5vw;
+      padding: 4vw;
+      background-color: #f9f9f7;
+      li{
+        display: -webkit-flex;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1vw;
+        span{
+          font-size: 1.5rem;
+        }
+        em{
+          font-style: normal;
+          font-size: 1.2rem;
+        }
+        b{
+          font-size: 2rem;
+        }
+      }
+    }
+    .client-list{
+      margin-top: 5vw;
+      padding: 4vw;
+      font-weight: 600;
+      background-color: #f9f9f7;
+      .client-name{
+        display:-webkit-flex;
+        display: flex;
+        padding-bottom: 5vw;
+        margin-bottom: 3vw;
+        border-bottom: 1px solid #333;
+        justify-content: space-between;
+        span{
+          font-size: 1.6rem;
+          em{
+            font-style: normal;
+          }
+        }
+        i{
+          display: inline-block;
+          width: 5vw;
+          height: 3.8vw;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      .client-time,.client-status,.client-pay{
+        display:-webkit-flex;
+        display: flex;
+        padding-top: 3vw;
+        justify-content: space-between;
+        .pay-number{
+          font-size: 1.8rem;
+        }
+        .refund{
+          padding: 1vw 4vw;
+          background-color: #e50212;
+          color: #fff;
+          border-radius: 3vw;
+        }
+      }
+    }
+  }
+  footer{
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    z-index: 200;
+    .logo{
+      display: inline-block;
+      margin: 5vw calc(50vw - 15vw);
+      width: 30vw;
+      height: 15vw;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .client-pay-search{
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 80vw;
+    height: 88vw;
+    margin: auto;
+    background-color: #fff;
+    z-index: 500;
+    .head{
+      padding: 2vw 0;
+      text-align: center;
+      background-color: #ef820b;
+      color: #fff;
+      font-size: 1.6rem;
+    }
+    .mid{
+      margin: 5vw 5vw 3vw 5vw;
+      height: 47vw;
+      border-top: 1px solid #d5d4d5;
+      border-left: 1px solid #d5d4d5;
+      overflow:auto;overflow-x:hidden;
+      ul{
+        li{
+          display: inline-block;
+          margin: 3vw 5vw 0 5vw;
+          span{
+            display: inline-block;
+            padding: 2vw 5vw;
+            margin: 0 2vw 2vw 0;
+            background-color: #e4e4e4;
+          }
+        }
+      }
+    }
+    .foot-search{
+      text-align: center;
+      button{
+        padding: 2vw 15vw;
+        background-color: #d1d1d1;
+        border-radius: 4vw;
+        outline: none;
+        i{
+          display: inline-block;
+          width: 5vw;
+          height: 5vw;
+          vertical-align:  top;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+//财务已付款给厂家
+.finance-factoryPay{
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+  .head-factoryPay{
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fea201;
+    padding:6vw 3vw 3vw 3vw;
+    .return{
+      display: inline-block;
+      width: 7vw;
+      height: 7vw;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    h3{
+      color: #fff;
+      font-size: 2rem;
+    }
+    em{
+      display: inline-block;
+      width: 7vw;
+      height: 7vw;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  main{
+    flex: 1;
+    margin-bottom: 30vw;
+    .order-record{
+      margin-top: 5vw;
+      padding: 4vw;
+      background-color: #f9f9f7;
+      li{
+        display: -webkit-flex;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1vw;
+        span{
+          font-size: 1.5rem;
+        }
+        em{
+          font-style: normal;
+          font-size: 1.2rem;
+        }
+        b{
+          font-size: 2rem;
+        }
+      }
+    }
+    .factory-list{
+      margin-top: 5vw;
+      padding: 4vw;
+      font-weight: 600;
+      background-color: #f9f9f7;
+      .factory-name{
+        display:-webkit-flex;
+        display: flex;
+        padding-bottom: 5vw;
+        margin-bottom: 3vw;
+        border-bottom: 1px solid #333;
+        align-items: center;
+        justify-content: space-between;
+        span{
+          font-size: 1.5rem;
+          em{
+            font-style: normal;
+          }
+        }
+        i{
+          display: inline-block;
+          width: 5vw;
+          height: 3.8vw;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      li{
+        display:-webkit-flex;
+        display: flex;
+        padding-top: 3vw;
+        justify-content: space-between;
+        em{
+          font-size: 1.8rem;
+        }
+        .verity-pay{
+          padding: 1vw 4vw;
+          background-color: #e50212;
+          color: #fff;
+          border-radius: 3vw;
+        }
+      }
+    }
+    .bank-message{
+      padding: 2vw 4vw;
+    }
+  }
+  footer{
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    z-index: 200;
+    .logo{
+      display: inline-block;
+      margin: 5vw calc(50vw - 15vw);
+      width: 30vw;
+      height: 15vw;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .client-pay-search{
+    //display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 80vw;
+    height: 88vw;
+    margin: auto;
+    background-color: #fff;
+    z-index: 500;
+    .head{
+      padding: 2vw 0;
+      text-align: center;
+      background-color: #ef820b;
+      color: #fff;
+      font-size: 1.6rem;
+    }
+    .mid{
+      margin: 5vw 5vw 3vw 5vw;
+      height: 47vw;
+      border-top: 1px solid #d5d4d5;
+      border-left: 1px solid #d5d4d5;
+      overflow:auto;overflow-x:hidden;
+      ul{
+        li{
+          display: inline-block;
+          margin: 3vw 5vw 0 5vw;
+          span{
+            display: inline-block;
+            padding: 2vw 5vw;
+            margin: 0 2vw 2vw 0;
+            background-color: #e4e4e4;
+          }
+        }
+      }
+    }
+    .foot-search{
+      text-align: center;
+      button{
+        padding: 2vw 15vw;
+        background-color: #d1d1d1;
+        border-radius: 4vw;
+        outline: none;
+        i{
+          display: inline-block;
+          width: 5vw;
+          height: 5vw;
+          vertical-align:  top;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+//财务付款给厂家
+.finance-factory{
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+  .head-factoryPay{
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fea201;
+    padding:6vw 3vw 3vw 3vw;
+    .return{
+      display: inline-block;
+      width: 7vw;
+      height: 7vw;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    h3{
+      color: #fff;
+      font-size: 2rem;
+    }
+    em{
+      display: inline-block;
+      width: 7vw;
+      height: 7vw;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  main{
+    flex: 1;
+    margin-bottom: 30vw;
+    .factory-list{
+      margin-top: 5vw;
+      padding: 4vw;
+      font-weight: 600;
+      background-color: #f9f9f7;
+      .factory-name{
+        display:-webkit-flex;
+        display: flex;
+        padding-bottom: 5vw;
+        margin-bottom: 3vw;
+        border-bottom: 1px solid #333;
+        align-items: center;
+        justify-content: space-between;
+        span{
+          font-size: 1.5rem;
+          em{
+            font-style: normal;
+          }
+        }
+        i{
+          display: inline-block;
+          width: 5vw;
+          height: 3.8vw;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      li{
+        display:-webkit-flex;
+        display: flex;
+        padding-top: 3vw;
+        justify-content: space-between;
+        em{
+          font-size: 1.8rem;
+        }
+        .verity-pay{
+          padding: 1vw 4vw;
+          background-color: #e50212;
+          color: #fff;
+          border-radius: 3vw;
+        }
+      }
+    }
+    .bank-message{
+      padding: 2vw 4vw;
+    }
+  }
+  footer{
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    z-index: 200;
+    .logo{
+      display: inline-block;
+      margin: 5vw calc(50vw - 15vw);
+      width: 30vw;
+      height: 15vw;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  //确认付款
+  .collect-money{
+    margin: 0 3vw;
+    font-size: 1.6rem;
+    .collect-message{
+      border-bottom: 1px solid #514c4d;
+      text-align: center;
+      font-size: 1.2rem;
+      .alert-ico{
+        display: inline-block;
+        width: 25vw;
+        height: 12vw;
+        margin-top: -14%;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      p{
+        margin: 2vw 0;
+      }
+      span{
+        display: inline-block;
+        margin-bottom: 2vw;
+      }
+    }
+    .verify-button{
+      display: -webkit-flex;
+      display: flex;
+      margin: 3vw 3vw;
+      justify-content: space-between;
+      button{
+        padding: 2vw 5vw;
+        border-radius: 2vw;
+        background-color: #dcdcdc;
+        outline: none;
+      }
+    }
+  }
+  //搜索
+  .client-pay-search{
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 80vw;
+    height: 88vw;
+    margin: auto;
+    background-color: #fff;
+    z-index: 500;
+    .head{
+      padding: 2vw 0;
+      text-align: center;
+      background-color: #ef820b;
+      color: #fff;
+      font-size: 1.6rem;
+    }
+    .mid{
+      margin: 5vw 5vw 3vw 5vw;
+      height: 47vw;
+      border-top: 1px solid #d5d4d5;
+      border-left: 1px solid #d5d4d5;
+      overflow:auto;overflow-x:hidden;
+      ul{
+        li{
+          display: inline-block;
+          margin: 3vw 5vw 0 5vw;
+          span{
+            display: inline-block;
+            padding: 2vw 5vw;
+            margin: 0 2vw 2vw 0;
+            background-color: #e4e4e4;
+          }
+        }
+      }
+    }
+    .foot-search{
+      text-align: center;
+      button{
+        padding: 2vw 15vw;
+        background-color: #d1d1d1;
+        border-radius: 4vw;
+        outline: none;
+        i{
+          display: inline-block;
+          width: 5vw;
+          height: 5vw;
+          vertical-align:  top;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+//财务客户清单
+.finance-list{
+  .list-head{
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fea201;
+    padding:6vw 3vw 3vw 3vw;
+    .return{
+      display: inline-block;
+      width: 7vw;
+      height: 7vw;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    h3{
+      color: #fff;
+      font-size: 2rem;
+    }
+    em{
+      display: inline-block;
+      width: 5vw;
+      height: 5vw;
+    }
+  }
+  main{
+    margin-top: 5vw;
+    padding: 4vw;
+    .client-name{
+      display: -webkit-flex;
+      display: flex;
+      padding-bottom: 2vw;
+      border-bottom: 1px solid #333;
+      justify-content: space-between;
+      font-size: 1.5rem;
+      font-weight: 600;
+      em{
+        font-style: normal;
+      }
+    }
+    ul{
+      margin-top: 5vw;
+      li{
+        display: -webkit-flex;
+        display: flex;
+        padding: 1.5vw 0;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+    .list-product{
+      margin-top: 10vw;
+      b{
+        display: block;
+        width: 30vw;
+        text-align: center;
+        margin: -4vw auto 0 auto;
+        background-color: #f9f9f7;
+        font-size: 2rem;
+      }
+      hr{
+        width: 80vw;
+        margin: 0 auto;
+      }
+      .product-module{
+        margin-top: 5vw;
+        .module-ico{
+          display: inline-block;
+          vertical-align: middle;
+          width: 10vw;
+          height: 5vw;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .module-name{
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 1.5rem;
+        }
+        .product-detail{
+          padding: 2vw 0;
+          border-bottom: 1px dashed #333;
+          .product-img{
+            display: inline-block;
+            width: 45vw;
+            height: 28vw;
+            img{
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .product-message{
+            display: inline-block;
+            width: 45vw;
+            vertical-align: top;
+            p{
+              padding-bottom:1vw;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//财务工厂清单
+.finance-factoryList{
+  .list-head{
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fea201;
+    padding:6vw 3vw 3vw 3vw;
+    .return{
+      display: inline-block;
+      width: 7vw;
+      height: 7vw;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    h3{
+      color: #fff;
+      font-size: 2rem;
+    }
+    em{
+      display: inline-block;
+      width: 5vw;
+      height: 5vw;
+    }
+  }
+  main{
+    margin-top: 5vw;
+    padding: 4vw;
+    .client-name{
+      display: -webkit-flex;
+      display: flex;
+      padding-bottom: 2vw;
+      border-bottom: 1px solid #333;
+      justify-content: space-between;
+      font-size: 1.5rem;
+      font-weight: 600;
+      em{
+        font-style: normal;
+      }
+    }
+    ul{
+      margin-top: 5vw;
+      li{
+        display: -webkit-flex;
+        display: flex;
+        padding: 1.5vw 0;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+    .list-product{
+      margin-top: 10vw;
+      b{
+        display: block;
+        width: 30vw;
+        text-align: center;
+        margin: -4vw auto 0 auto;
+        background-color: #f9f9f7;
+        font-size: 2rem;
+      }
+      hr{
+        width: 80vw;
+        margin: 0 auto;
+      }
+      .product-module{
+        margin-top: 5vw;
+        .module-ico{
+          display: inline-block;
+          vertical-align: middle;
+          width: 10vw;
+          height: 5vw;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .module-name{
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 1.5rem;
+        }
+        .product-detail{
+          padding: 2vw 0;
+          border-bottom: 1px dashed #333;
+          .product-img{
+            display: inline-block;
+            width: 45vw;
+            height: 28vw;
+            img{
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .product-message{
+            display: inline-block;
+            width: 45vw;
+            vertical-align: top;
+            p{
+              padding-bottom:1vw;
+            }
+          }
+        }
       }
     }
   }
